@@ -10,8 +10,8 @@ const Navbar = () => {
   return (
     // For Mobile View
     <div className="Navbar w-full flex flex-row justify-between items-center py-4 px-5 md:shadow-sm md:shadow-gray-500">
-      <div className="logo">
-        <h1 className="p-3 text-3xl font-bold text-[#00df9a] hover:bg-[#00df9a] hover:text-white hover:rounded hover:cursor-pointer">React</h1>
+      <div className="logo w-full md:w-auto">
+        <h1 className="p-3 text-3xl w-full font-bold text-[#00df9a] hover:cursor-pointer hover:text-white">React</h1>
       </div>
       <div className="block cursor-pointer p-3 hover:bg-slate-500 hover:rounded active:bg-slate-500 active:rounde ease-in-out duration-300 md:hidden" onClick={handleNav}>
         {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
